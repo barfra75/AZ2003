@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "../../AppData/Roaming/Code/User/workspaceStorage/d6a0a48a5183dd5e53233cd51118da37/ms-dotnettools.csdevkit/AZ2003.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "../../AppData/Roaming/Code/User/workspaceStorage/d6a0a48a5183dd5e53233cd51118da37/ms-dotnettools.csdevkit/AZ2003.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "../../AppData/Roaming/Code/User/workspaceStorage/d6a0a48a5183dd5e53233cd51118da37/ms-dotnettools.csdevkit/AZ2003.sln"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
